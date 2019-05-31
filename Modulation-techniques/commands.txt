@@ -1,0 +1,4 @@
+gcc -Wall -I/home/chadalavada/gsl/include -c -lm -lgsl -lgslcblas bpsk.c
+gcc -L/home/chadalavada/gsl/lib bpsk.o -lgsl -lgslcblas -lm
+
+/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
